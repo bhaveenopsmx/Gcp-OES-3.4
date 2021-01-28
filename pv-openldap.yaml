@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-open-ldap
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/bhaveen_g/PVDIR/openldap"
